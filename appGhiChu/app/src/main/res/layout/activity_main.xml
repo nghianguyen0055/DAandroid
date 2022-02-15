@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#F6EFAF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:background="@drawable/bg_botron"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2.6"
+            android:layout_height="wrap_content"
+            android:id="@+id/TimKiem"
+            android:hint="Tìm Kiếm"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Imghinh"
+            android:src="@drawable/search"
+            android:layout_weight="0.4"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvdanhsach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cong"
+        android:id="@+id/floatThem"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FF5722"/>
+
+</RelativeLayout>

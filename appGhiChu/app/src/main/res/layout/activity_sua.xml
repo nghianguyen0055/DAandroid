@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#79DCF4"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa Ghi Chú"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#3F51B5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu Đề"
+            android:id="@+id/TextTDSua"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nội Dung"
+        android:id="@+id/TextNDSua"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/buttonSua"
+        android:backgroundTint="#2196F3"
+        android:background="@drawable/bg_botron"/>
+
+</LinearLayout>
